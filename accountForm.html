@@ -1,0 +1,19 @@
+<!-- 
+    Lightning Web Component for creating a new record in a Salesforce object.
+    Author: Nishant Viroja ( https://nishantviroja.me/ )
+
+    Description: This HTML template provides a form for users to input data for creating a new record.
+-->
+
+<template>
+    <lightning-card title="Create New Record">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Name" value={recordName} onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Description" value={recordDescription} onchange={handleDescriptionChange}></lightning-input>
+            <!-- Add more input fields as needed -->
+            <div class="slds-m-top_medium">
+                <lightning-button label="Create Record" variant="brand" onclick={createRecord}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
